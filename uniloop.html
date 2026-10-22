@@ -411,7 +411,7 @@
 
     // 3. HÀM ĐỔI TRẠNG THÁI: VẪN CÒN / ĐÃ PASS (THEO YÊU CẦU NHÓM TRƯỞNG)
     function changeItemStatus(rowNumber, correctPin, currentStatus) {
-      const inputPin = prompt("Nhập mã PIN của bạn (hoặc Pass Admin 1104) để chỉnh trạng thái:");
+      const inputPin = prompt("Nhập mã PIN của bạn để chỉnh trạng thái:");
       if (!inputPin) return;
 
       if (inputPin === String(correctPin) || inputPin === ADMIN_MASTER_PASS) {
@@ -437,7 +437,7 @@
 
     // 4. HÀM XÁC THỰC MÃ PIN ĐỂ XÓA BÀI
     function confirmDeleteItem(rowNumber, correctPin) {
-      const inputPin = prompt("Nhập mã PIN 4 số của bạn để xóa bài (Hoặc nhập Pass Admin 1104):");
+      const inputPin = prompt("Nhập mã PIN 4 số của bạn để xóa bài:");
       if (!inputPin) return;
 
       if (inputPin === String(correctPin) || inputPin === ADMIN_MASTER_PASS) {
